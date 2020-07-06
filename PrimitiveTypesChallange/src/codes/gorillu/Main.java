@@ -10,7 +10,7 @@ public class Main {
         byte byteValue = 124;
         short shortValue = 2200;
         int intValue = 240;
-        long longValue = 50000 * (byteValue + shortValue + intValue);
+        long longValue = 50000L + (10L * (byteValue + shortValue + intValue));
         System.out.println(longValue);
 
     }

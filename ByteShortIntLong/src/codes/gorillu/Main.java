@@ -62,11 +62,5 @@ public class Main {
 
         short myNewShortValue = (short) (myMinShortValue/2);
 
-
-
-
-
-
-
     }
 }
