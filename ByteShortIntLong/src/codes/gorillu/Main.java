@@ -4,23 +4,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int myValue = 10000;
-        int myMinValue = Integer.MIN_VALUE;
-        int myMaxValue = Integer.MAX_VALUE;
+        int myIntValue = 10000;
+        int myMinIntValue = Integer.MIN_VALUE;
+        int myMaxIntValue = Integer.MAX_VALUE;
 
         // Integer Minimum Value = -2147483648
-        System.out.println("Integer Minimum Value = " + myMinValue);
+        System.out.println("Integer Minimum Value = " + myMinIntValue);
         // Integer Maximum Value = 2147483647
-        System.out.println("Integer Maximum Value = " + myMaxValue);
+        System.out.println("Integer Maximum Value = " + myMaxIntValue);
 
         // Max has turned into a negative number and has created overflow
-        System.out.println("Busted MAX value = " + (myMaxValue+1));
+        System.out.println("Busted MAX value = " + (myMaxIntValue+1));
 
         // Min has turned into a positive number and has created underflow
-        System.out.println("Busted MIN value = " + (myMinValue-1));
+        System.out.println("Busted MIN value = " + (myMinIntValue-1));
 
         // If changed to 2147483648 it will throw an error & can be written with an underscore (Java version and higher)
-        int myMaxIntTEst = 2_147_483_647;
+        int myMaxIntTest = 2_147_483_647;
 
         // Byte Minimum Value = -128
         byte myMinByteValue = Byte.MIN_VALUE;
@@ -54,6 +54,17 @@ public class Main {
 
         System.out.println("Long Minimum Value = " + myMinLongValue);
         System.out.println("Long Maximum Value = " + myMaxLongValue);
+
+        int myTotal = (myMinIntValue / 2);
+        // byte myNewByteValue = (myMinByteValue /2); <--- throws an error because everything within the parentheses is treated as an integer
+        // the byte value needs to be casted
+        byte myNewByteValue = (byte) (myMinByteValue /2);
+
+        short myNewShortValue = (short) (myMinShortValue/2);
+
+
+
+
 
 
 
